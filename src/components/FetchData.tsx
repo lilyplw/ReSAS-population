@@ -7,8 +7,7 @@ import Graf from "./Graf";
 
 const FetchData = () => {
   const { selectedPref, apiData } = useContext(GrafContext);
-  const prefCode = selectedPref.prefCode;
-  const { data, isLoading, isError } = usePopulationData(prefCode);
+  const { data, isLoading, isError } = usePopulationData(selectedPref.prefCode);
 
   if (isError) return <div>Error: {isError.info?.message}</div>;
   if (isLoading) return <div>Loading...</div>;

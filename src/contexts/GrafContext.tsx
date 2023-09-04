@@ -9,7 +9,6 @@ import {
 import { usePopulationData } from "../hooks/useResasApi";
 import { PrefectureType } from "../data/prefectures";
 
-// このAPIのデータの型は何かに依存します。適切な型に変更してください。
 interface ApiDataType {
   [key: string]: any;
 }
