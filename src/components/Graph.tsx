@@ -1,5 +1,5 @@
 import { useRef, useContext } from "react";
-import { GrafContext } from "../contexts/GrafContext";
+import { GraphContext } from "../contexts/GraphContext";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
@@ -8,12 +8,12 @@ interface DataPoint {
   value: number;
 }
 
-interface GrafProps extends HighchartsReact.Props {
+interface GraphProps extends HighchartsReact.Props {
   data: { [key: string]: DataPoint }; // DataPointオブジェクトのキーでアクセスできるようにします。
 }
 
-const Graf = (props: GrafProps) => {
-  const { selectedPref } = useContext(GrafContext);
+const Graph = (props: GraphProps) => {
+  const { selectedPref } = useContext(GraphContext);
   const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
   const { data, ...restProps } = props;
 
@@ -57,4 +57,4 @@ const Graf = (props: GrafProps) => {
   );
 };
 
-export default Graf;
+export default Graph;

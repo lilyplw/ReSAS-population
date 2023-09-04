@@ -1,12 +1,12 @@
-// RESAS APIからデータを取得し、Grafコンポーネントに渡す
+// RESAS APIからデータを取得し、Graphコンポーネントに渡す
 
 import { useContext } from "react";
-import { GrafContext } from "../contexts/GrafContext";
+import { GraphContext } from "../contexts/GraphContext";
 import { usePopulationData } from "../hooks/useResasApi";
-import Graf from "./Graf";
+import Graph from "./Graph";
 
 const FetchData = () => {
-  const { selectedPref, apiData } = useContext(GrafContext);
+  const { selectedPref, apiData } = useContext(GraphContext);
   const { data, isLoading, isError } = usePopulationData(selectedPref.prefCode);
 
   if (isError) return <div>Error: {isError.info?.message}</div>;
@@ -15,7 +15,7 @@ const FetchData = () => {
   return (
     <>
       {/* dataがundefinedでないことを確認 */}
-      {data?.result && <Graf data={apiData} />}
+      {data?.result && <Graph data={apiData} />}
     </>
   );
 };

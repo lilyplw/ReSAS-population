@@ -13,14 +13,14 @@ interface ApiDataType {
   [key: string]: any;
 }
 
-interface GrafContextType {
+interface GraphContextType {
   selectedPref: PrefectureType;
   setSelectedPref: Dispatch<SetStateAction<PrefectureType>> | null;
   apiData: ApiDataType;
   setApiData: Dispatch<SetStateAction<ApiDataType>> | null;
 }
 
-export const GrafContext = createContext<GrafContextType>({
+export const GraphContext = createContext<GraphContextType>({
   selectedPref: { prefCode: 13, prefName: "東京都" },
   setSelectedPref: null,
   apiData: {},
@@ -47,10 +47,10 @@ export function AppProvider({ children }: AppProviderProps) {
   }, [data, isLoading, isError]);
 
   return (
-    <GrafContext.Provider
+    <GraphContext.Provider
       value={{ selectedPref, setSelectedPref, apiData, setApiData }}
     >
       {children}
-    </GrafContext.Provider>
+    </GraphContext.Provider>
   );
 }

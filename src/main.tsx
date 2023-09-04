@@ -1,13 +1,13 @@
 import React from "react";
-import { AppProvider } from "./contexts/GrafContext";
+import { AppProvider } from "./contexts/GraphContext.tsx";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-	<React.StrictMode>
-		<AppProvider>
-			<App />
-		</AppProvider>
-	</React.StrictMode>
+  <React.StrictMode>
+    <AppProvider>
+      <App />
+    </AppProvider>
+  </React.StrictMode>
 );

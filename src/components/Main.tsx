@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import { GrafContext } from "../contexts/GrafContext";
+import { GraphContext } from "../contexts/GraphContext";
 import { RiAccountCircleFill } from "react-icons/ri";
 
 import FetchData from "./FetchData";
 import SelectData from "./SelectData";
 
 const Main = () => {
-  const { selectedPref } = useContext(GrafContext);
+  const { selectedPref } = useContext(GraphContext);
 
   return (
     <>
