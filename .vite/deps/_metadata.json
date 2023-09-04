@@ -1,0 +1,56 @@
+{
+  "hash": "9582e968",
+  "browserHash": "24980749",
+  "optimized": {
+    "highcharts": {
+      "src": "../../node_modules/highcharts/highcharts.js",
+      "file": "highcharts.js",
+      "fileHash": "e4f296e8",
+      "needsInterop": true
+    },
+    "highcharts-react-official": {
+      "src": "../../node_modules/highcharts-react-official/dist/highcharts-react.min.js",
+      "file": "highcharts-react-official.js",
+      "fileHash": "05d61185",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "66c6b004",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "5d18c43a",
+      "needsInterop": true
+    },
+    "react-icons/ri": {
+      "src": "../../node_modules/react-icons/ri/index.esm.js",
+      "file": "react-icons_ri.js",
+      "fileHash": "0645f402",
+      "needsInterop": false
+    },
+    "swr": {
+      "src": "../../node_modules/swr/core/dist/index.mjs",
+      "file": "swr.js",
+      "fileHash": "a7aec2b7",
+      "needsInterop": false
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "d2835d6b",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-ZAUFE7H7": {
+      "file": "chunk-ZAUFE7H7.js"
+    },
+    "chunk-UXIASGQL": {
+      "file": "chunk-UXIASGQL.js"
+    }
+  }
+}
